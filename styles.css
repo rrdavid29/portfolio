@@ -1,0 +1,246 @@
+/* ---------- MOBILE ---------- */  
+
+html {
+    font-family: 'Raleway';
+    scroll-behavior: smooth;
+    color: black;
+}
+
+header {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+h2, h4 {
+    text-transform: uppercase;
+}
+
+/* ----- NAVIGATION ----- */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    align-items: center;
+    background-color: white;
+    padding: 5px 20px;
+    border-bottom: 3px black solid;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    padding: 20px 10px;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#hero {
+    font-size: 1.5em;
+    padding: 40px 90px 40px 90px;
+    border-bottom: 3px black solid;
+    margin: 0;
+}
+
+/* ----- SELECTED WORKS ----- */
+
+.view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 20px 40px;
+}
+
+img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 40px;
+}
+
+main {
+    border-bottom: 3px black solid;
+    margin: 0;
+}
+
+/* ----- ABOUT ME ----- */
+
+#About {
+    padding-top: 40px;
+}
+
+#bio {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    background-color: black;
+    padding: 5px 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* ----- PAGES ----- */
+
+h3 {
+    text-transform: uppercase;
+}
+
+.words {
+    padding: 40px;
+}
+
+time {
+    font-weight: 600;
+}
+
+.material {
+    font-size: .90em;
+    font-style: italic;
+}
+
+.copy {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.break {
+    padding-bottom: 40px;
+}
+
+.pageimage {
+    padding-top: 40px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.projectsheader {
+    padding: 20px 40px 20px 40px;
+}
+
+.gridproject {
+    padding-bottom: 80px;
+}
+
+video {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* ---------- DESKTOP #1 ---------- */
+
+@media only screen and (min-width: 640px) {
+
+    .projectimage {
+        padding: 0;
+    }
+
+    .gridproject {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin: auto;
+        width: 640px;
+    }
+
+    .projectsheader {
+        padding: 20px 100px 20px 100px;
+    }
+
+    .words {
+        width: 500px;
+        margin: auto;
+    }
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    #hero {
+        font-size: 1.5em;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        border: none;
+        margin: auto;
+        width: 600px;
+    }
+
+    .view {
+        padding: 20px 200px 20px 200px;
+        margin: auto;
+    }
+
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        width: 1000px;
+        margin: auto;
+        padding-bottom: 80px;
+    }
+
+    main {
+        border: none;
+    }
+
+    .aboutflex {
+        display: flex;
+        width: 1000px;
+        margin: auto;
+    }
+
+    #bio {
+        flex: 1;
+        padding: 40px;
+    }
+
+    #portrait {
+        padding: 40px;
+    }
+
+    .projectimage {
+        padding: 0;
+    }
+
+    .gridproject {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        margin: auto;
+        width: 980px;
+    }
+
+    .projectsheader {
+        padding: 20px 100px 20px 100px;
+    }
+
+    .ecogrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        width: 1000px;
+        margin: auto;
+    }
+}
