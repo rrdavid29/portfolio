@@ -63,13 +63,93 @@ img {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 40px;
 }
 
 main {
     border-bottom: 3px black solid;
     margin: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+.projectimage {
+    box-shadow: 10px 10px 16px -6px rgba(0,0,0,0.3);
+}
+
+
+
+/* HOVER EFFECT #1 */
+
+.img-wrapper {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-wrapper > .content {
+    position: absolute;
+    inset: 0;
+    background: rgb(255, 255, 255, 0.75);
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper > img,
+.img-wrapper > .content {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper > .content {
+    opacity: 0;
+}
+
+.img-wrapper:hover > .content {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+/* HOVER EFFECT #2 */
+
+.img-wrapper2 {
+    position: relative;
+    padding-top: 20px;
+}
+
+.img-wrapper2 > .content2 {
+    position: absolute;
+    inset: 0;
+    background: rgb(255, 255, 255, 0.75);
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper2 > img,
+.img-wrapper2 > .content2 {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper2 > .content2 {
+    opacity: 0;
+}
+
+.img-wrapper2:hover > .content2 {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
 
 /* ----- ABOUT ME ----- */
 
@@ -121,10 +201,10 @@ time {
 }
 
 .pageimage {
-    padding-top: 40px;
     display: block;
     max-width: 100%;
     height: auto;
+    padding: 20px;
 }
 
 .projectsheader {
